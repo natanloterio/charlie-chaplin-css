@@ -7,8 +7,11 @@ body, html{
 }
 
 .wrapper{
-  display: table-cell;
-  vertical-align: middle;
+  height: 397px;
+  width: 164px;
+  /* display: flex; */
+  top: 20px;
+  /* vertical-align: middle; */
   position: relative;
   -webkit-animation: wraper-move 0.5s infinite;
 }
@@ -55,31 +58,43 @@ body, html{
   -webkit-animation:border-pulse 1s 3.3s 1 ease;
   -webkit-animation-fill-mode: forwards;
 }
-
+.upper_body{
+  width: 132px;
+  height: 100px;
+  margin: 0 auto;
+  /* background: #222; */
+  border-radius: 23px;
+  /* display: inline; */
+  float: left;
+  position: static;
+}
 .body{
-  width: 285px;
-  height: 600px;
+  width: 72px;
+  height: 100px;
   margin: 0 auto;
   background: #222;
-  border-radius: 100px;
-  position: static;
-  top: 308px;
+  border-radius: 23px;
+  position: relative;
+  /* top: 230px; */
+  left: 10px;
+  float: left;
   animation:body-enter 0.7s 0.2s 1 ease;
   animation-fill-mode: forwards body-swing;
   -webkit-animation:body-enter 0.7s 0.2s 1 ease;
   -webkit-animation-fill-mode: forwards;
-   -webkit-transform:scale(0) translateZ(0);
+  -webkit-transform:scale(0) translateZ(0);
   transform:scale(0) translateZ(0);
 }
 .left_arm{
-    width: 80px;
-    height: 300px;
+    width: 16px;
+    height: 66px;
     margin: 0 auto;
     background: #222;
     border-radius: 35px;
     position: relative;
-    left: -150px;
-    top: 70px;
+    left: 17px;
+    float: left;
+    top: 9px;
     animation: body-enter 0.7s 0.2s 1 ease;
     animation-fill-mode: forwards;
     -webkit-animation: body-enter 0.7s 0.2s 1 ease;
@@ -88,14 +103,15 @@ body, html{
     transform: scale(0) translateZ(0);
 }
 .right_arm{
-    width: 80px;
-    height: 316px;
+    width: 16px;
+    height: 66px;
     margin: 0 auto;
     background: #222;
     border-radius: 35px;
     position: relative;
-    left: 156px;
-    top: -231px;
+    left: 2px;
+    float: left;
+    top: 8px;
     animation: body-enter 0.7s 0.2s 1 ease;
     animation-fill-mode: forwards;
     -webkit-animation: body-enter 0.7s 0.2s 1 ease;
@@ -103,96 +119,94 @@ body, html{
     -webkit-transform: scale(0) translateZ(0);
     transform: scale(0) translateZ(0);
 }
-.shirt{
-border-top: 200px solid #fff;
-    border-left: 45px solid transparent;
-    border-right: 45px solid transparent;
-    height: 5px;
-    left: 90px;
-    top: 1px;
-    position: absolute;
-    width: 21px;
-}
+.shirt{border-top: 69px solid #fff;border-left: 7px solid transparent;border-right: 7px solid transparent;height: 57px;left: 25px;/* top: 1px; */position: absolute;width: 13px;}
 .tie_knot{
-	border-top: 32px solid #DCD3D3;
-    border-left: 16px solid transparent;
-    border-right: 16px solid transparent;
-    height: 5px;
-    left: 118px;
-    top: 20px;
-    position: fixed;
-    width: 19px;
+  border-top: 5px solid #DCD3D3;
+  border-left: 5px solid transparent;
+  border-right: 4px solid transparent;
+  height: 5px;
+  left: 0px;
+  top: -69px;
+  position: absolute;
+  width: 4px;
+  z-index: 99;
 }
 .tie{
-    border-bottom: 136px solid #DCD3D3;
-    border-left: 2px solid transparent;
+    border-bottom: 36px solid #DCD3D3;
+    border-left: 1px solid transparent;
     border-right: 2px solid transparent;
     height: 5px;
-    left: 134px;
-    top: 54px;
-    position: fixed;
-    width: 16px;
+    left: 4px;
+    top: -67px;
+    position: absolute;
+    width: 4px;
+    z-index: 99;
 }
 .legs{
-    width: 298px;
-    height: 236px;
+    width: 73px;
+    height: 158px;
     border-radius: 95px;
     position: relative;
     z-index: 99;
     margin: auto;
+    left: 28px;
+    float: left;
+    top: -10px;
 }
 .right_leg{
-    width: 116px;
-    height: 316px;
+    width: 26px;
+    height: 121px;
     margin: 0 auto;
     background: transparent;
     border-radius: 35px;
     position: relative;
     float: right;
     margin-right: 10px;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     animation: body-enter 0.7s 0.2s 1 ease, right_leg_move 1s;
-
     animation-fill-mode: forwards;
     -webkit-animation: body-enter 0.7s 0.2s 1 ease;
     -webkit-animation-fill-mode: forwards;
     -webkit-transform: scale(0) translateZ(0);
     transform: scale(0) translateZ(0);
-
 }
 
 .top_right_leg{
-    width: 116px;
-    height: 150px;
+    width: 26px;
+    height: 54px;
     margin: 0 auto;
     background: #222;
     border-radius: 5px;
     position: relative;
     float: left;
     -webkit-animation: top_right_leg_move 0.5s infinite;
+    -webkit-animation-delay: 3s;
     animation: top_right_leg_move 0.5s infinite;
+    animation-delay: 1.25s;    
 }
 .bottom_right_leg{
-    width: 116px;
-    height: 166px;
+    width: 26px;
+    height: 54px;
     margin-top: -20px;
     /* margin: auto; */
     background: #222;
     border-radius: 35px;
     float: left;
-    -webkit-animation: bottom_right_leg_move 0.5s infinite;
-    animation: bottom_right_leg_move 0.5s infinite;    
+    animation: bottom_right_leg_move 0.5s infinite;
+    animation-delay: 1.25s;
+    -webkit-animation: bottom_right_leg_move 0.5s infinite;    
+    -webkit-animation-delay: 1.25s;    
 }
 .left_leg{
-    width: 116px;
-    height: 316px;
+    width: 26px;
+    height: 121px;
     margin: 0 auto;
     background: transparent;
     border-radius: 35px;
     position: relative;
     float: left;
     margin-left: 10px;
-    margin-top: -50px;
+    /* margin-top: -50px; */
     animation: body-enter 0.7s 0.2s 1 ease;
     animation-fill-mode: forwards;
     -webkit-animation: body-enter 0.7s 0.2s 1 ease;
@@ -202,8 +216,8 @@ border-top: 200px solid #fff;
 }
 
 .top_left_leg{
-    width: 116px;
-    height: 150px;
+    width: 26px;
+    height: 54px;
     margin: 0 auto;
     background: #222;
     border-radius: 5px;
@@ -213,19 +227,19 @@ border-top: 200px solid #fff;
     animation: top_left_leg_move 0.5s infinite;
 }
 .bottom_left_leg{
-    width: 116px;
-    height: 166px;
+    width: 26px;
+    height: 54px;
     margin-top: -20px;
     /* margin: auto; */
     background: #222;
     border-radius: 35px;
     float: left;
     -webkit-animation: bottom_left_leg_move 0.5s infinite;
-    animation: bottom_left_leg_move 0.5s infinite;    
+    animation: bottom_left_leg_move 0.5s infinite;
 }
 .foot{
-    width: 130px;
-    height: 90px;
+    width: 38px;
+    height: 20px;
     margin: 0 auto;
     bottom: -10px;
     background: #020202;
@@ -241,15 +255,14 @@ border-top: 200px solid #fff;
     transform: scale(0) translateZ(0);
 }
 .head{
-  width: 196px;
-  height: 236px;
+  width: 61px;
+  height: 60px;
   border-radius: 95px;
   background: #FFE4BE;
-  position: absolute;
-  left: 50%;
-  z-index: 99;
-  margin-top: -210px;
-  margin-left: -98px;
+  position: static;
+  /* align-content: center; */
+  /* margin-top: -211px; */
+  margin-left: 33px;
   animation:grow 0.7s 0.4s 1 ease;
   -webkit-animation:grow 0.7s 0.4s 1 ease;
   /*
@@ -265,29 +278,30 @@ border-top: 200px solid #fff;
 }
 
 .hair-main{
-  width:220px;
-  height: 0px;
+  width: 73px;
+  height: 42px;
   background: #000000;
-  border-radius: 54px 54px 0px 0px;
-  margin-left: -12px;
-  margin-top: -10px;
+  border-radius: 17px 19px 0px 0px;
+  margin-left: -6px;
+  top: -24px;
+  margin-top: 13px;
   animation:hair-anim 0.7s 0.9s 1 ease;
-  animation-fill-mode: forwards;
-  -webkit-animation:hair-anim 0.7s 0.9s 1 ease;
-  -webkit-animation-fill-mode: forwards;
-  position: relative;
+  /* animation-fill-mode: forwards; */
+  /* -webkit-animation:hair-anim 0.7s 0.9s 1 ease; */
+  /* -webkit-animation-fill-mode: forwards; */
+  position: absolute;
   z-index: 2;
 }
 
 .hair-top{
-  width: 128px;
-  height: 70px;
+  width: 58px;
+  height: 41px;
   opacity: 0;
   border-top-right-radius: 30px;
   background: #000;
   position: relative;
-  top: -17px;
-  left: 50%;
+  top: -6px;
+  left: 71px;
   transform: translateX(-64px);
   -webkit-transform: translateX(-64px);
   transform-origin: right;
@@ -299,14 +313,14 @@ border-top: 200px solid #fff;
 }
 
 .hair-bottom{
-  width: 54px;
-  height: 50px;
+  width: 24px;
+  height: 19px;
   opacity: 0;
   border-bottom-left-radius: 25px;
   background: #000000;
   position: relative;
-  top: -20px;
-  left: 50%;
+  top: -8px;
+  left: 41px;
   transform: translateX(-27px);
   -webkit-transform: translateX(-27px);
   transform-origin: left;
@@ -318,16 +332,16 @@ border-top: 200px solid #fff;
 }
 
 .sideburn{
-  width: 8px;
-  height: 25px;
+  width: 67px;
+  height: 52px;
   background: #020202;
   position: absolute;
-  bottom: -25px;
+  bottom: -26px;
   opacity: 0;
-  animation:sideburn-anim 0.7s 0.9s 1 ease;
-  animation-fill-mode: forwards;
-  -webkit-animation:sideburn-anim 0.7s 0.9s 1 ease;
-  -webkit-animation-fill-mode: forwards;
+  /* animation:sideburn-anim 0.7s 0.9s 1 ease; */
+  /* animation-fill-mode: forwards; */
+  /* -webkit-animation:sideburn-anim 0.7s 0.9s 1 ease; */
+  /* -webkit-animation-fill-mode: forwards; */
 }
 
 .sideburn#left{
@@ -338,6 +352,7 @@ border-top: 200px solid #fff;
   right: 12px;
 }
 .topper {
+    display: none;
     width: 180px;
     height: 152px;
     border-radius: 48px 48px 0 0;
@@ -345,9 +360,9 @@ border-top: 200px solid #fff;
     position: absolute;
     top: -110px;
     left: 8px;
-    animation: hair-anim 0.1s 0.8s 1 linear;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    /* animation: hair-anim 0.1s 0.8s 1 linear; */
+    /* animation-fill-mode: forwards; */
+    /* -webkit-animation-fill-mode: forwards; */
     z-index: 3;
 }
 .topper_bottom {
@@ -364,28 +379,28 @@ border-top: 200px solid #fff;
     z-index: 3;
 }
 .face{
-  width: 180px;
-  height: 0px;
-  border-radius: 48px 48px 0 0;
+  width: 61px;
+  height: 39px;
+  border-radius: 16px 16px 10px 10px;
   background: #FFE4BE;
   position: absolute;
-  top: 40px;
-  left: 8px;
+  top: 0px;
+  /* left: 8px; */
   animation:hair-anim 0.1s 0.8s 1 linear;
   animation-fill-mode: forwards;
   -webkit-animation:hair-anim 0.1s 0.8s 1 linear;
-  -webkit-animation-fill-mode: forwards;
+  /* -webkit-animation-fill-mode: forwards; */
   z-index: 3;
 }
 .nose{
-  width: 20px;
-  height: 45px;
+  width: 10px;
+  height: 15px;
   opacity: 1;
   background: #FFE4BE;
   border-top-left-radius: 20px;
   position: absolute;
-  left: 50%;
-  top: 80px;
+  left: 45px;
+  top: 27px;
   margin-left:-20px;
   animation:shadow-anim 0.7s 3s 1 ease;
   animation-fill-mode: forwards;
@@ -395,12 +410,12 @@ border-top: 200px solid #fff;
   z-index: 5;
 }
 .ear{
-  width: 24px;
-  height: 35px;
+  width: 10px;
+  height: 19px;
   background: #FFE4BE;
   border-radius: 12px;
   position: absolute;
-  top: 116px;
+  top: 14px;
   animation:grow 0.7s 1.3s 1 ease;
   animation-fill-mode: forwards;
   -webkit-animation:grow 0.7s 1.3s 1 ease;
@@ -409,14 +424,14 @@ border-top: 200px solid #fff;
   transform: scale(0);
 }
 .mouth{
-  width: 39px;
-  height: 33px;
+  width: 12px;
+  height: 9px;
   border-radius: 33px 33px 0 0;
-  background: #423636;
+  background: #000;
   position: absolute;
-  top: 125px;
-  left: 58%;
-  margin-left: -33px;
+  top: 43px;
+  left: 23px;
+  /* margin-left: -33px; */
   animation:grow 0.7s 2.6s 1 ease;
   animation-fill-mode: forwards;
   -webkit-animation:grow 0.7s 2.6s 1 ease;
@@ -425,18 +440,18 @@ border-top: 200px solid #fff;
   transform: scale(0);
 }
 .ear#left{
-  left: -12px;
+  left: -7px;
 }
 .ear#right{
-  right: -12px;
+  right: -7px;
 }
 .eye-shadow{
-  width:30px;
-  height: 15px;
+  width: 2px;
+  height: 3px;
   border-radius: 0 0 15px 15px;
   background:rgba(149,36,0,0.1);
   position: absolute;
-  top: 70px;
+  top: 43px;
   animation:grow 0.7s 2s 1 ease;
   animation-fill-mode: forwards;
   -webkit-animation:grow 0.7s 2s 1 ease;
@@ -445,19 +460,20 @@ border-top: 200px solid #fff;
   transform: scale(0);
 }
 .eye-shadow#left{
-  left: 35px;
+  left: 25px;
   z-index: 5;
 }
 .eye-shadow#right{
-  right: 35px;
+  right: 5px;
 }
 .eyebrow{
-  width: 40px;
-  height: 10px;
+  width: 12px;
+  height: 3px;
   background: #000000;
   position: absolute;
-  top: -35px;
-  left: 50%;
+  top: -30px;
+  left: 7px;
+  z-index: 999;
   margin-left: -20px;
   opacity: 0;
   -webkit-backface-visibility: hidden;
@@ -472,15 +488,17 @@ border-top: 200px solid #fff;
   animation:eyebrow-anim-right 0.7s 2.2s 1 ease, eyebrow-raise 2s 6.6s infinite alternate ease-in-out;
   animation-fill-mode: forwards;
   -webkit-animation:eyebrow-anim-right 0.7s 2.2s 1 ease, eyebrow-raise 2s 6.6s infinite alternate ease-in-out;
-  -webkit-animation-fill-mode: forwards;
+  /* -webkit-animation-fill-mode: forwards; */
+  top: 86px;
+  margin-left: -20px;
 }
 .eye{
-  width: 20px;
-  height: 28px;
+  width: 6px;
+  height: 9px;
   border-radius: 10px;
   background: #334C68;
   position: absolute;
-  top: -18px;
+  top: -24px;
   left: 50%;
   margin-left: -10px;
   animation:grow 0.7s 2.2s 1 ease, eye-blink 4s 4.4s infinite linear;
@@ -491,21 +509,22 @@ border-top: 200px solid #fff;
   transform: scale(0);
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
-
 }
 .shadow-wrapper{
-  width: 98px;
-  height: 260px;
+  width: 30px;
+  height: 72px;
   position: absolute;
-  left: -8px;
-  bottom: -84px;
+  left: 0px;
+  top: -6px;
+  /* bottom: -84px; */
   z-index: 4;
   overflow: hidden;
 }
 .shadow{
-  width: 98px;
-  height: 260px;
-  border-radius: 50px;
+  width: 36px;
+  height: 69px;
+  /* border-radius: 38px; */
+  border-radius: 00px 34px;
   background: rgba(149,36,0,0.1);
   position: absolute;
   z-index: 4;
