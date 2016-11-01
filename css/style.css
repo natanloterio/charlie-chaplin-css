@@ -85,6 +85,13 @@ body, html{
   -webkit-transform:scale(0) translateZ(0);
   transform:scale(0) translateZ(0);
 }
+.bengala{
+    width: 45px;
+    height: 100px;
+    z-index: 999;
+    top: 63px;
+    position: relative;
+}
 .left_arm{
     width: 16px;
     height: 66px;
@@ -446,12 +453,12 @@ body, html{
   right: -7px;
 }
 .eye-shadow{
-  width: 2px;
+  width: 13px;
   height: 3px;
   border-radius: 0 0 15px 15px;
   background:rgba(149,36,0,0.1);
   position: absolute;
-  top: 43px;
+  top: 27px;
   animation:grow 0.7s 2s 1 ease;
   animation-fill-mode: forwards;
   -webkit-animation:grow 0.7s 2s 1 ease;
@@ -460,7 +467,7 @@ body, html{
   transform: scale(0);
 }
 .eye-shadow#left{
-  left: 25px;
+  left: 10px;
   z-index: 5;
 }
 .eye-shadow#right{
@@ -471,10 +478,10 @@ body, html{
   height: 3px;
   background: #000000;
   position: absolute;
-  top: -30px;
-  left: 7px;
+  top: -17px;
+  /* left: 7px; */
   z-index: 999;
-  margin-left: -20px;
+  /* margin-left: -20px; */
   opacity: 0;
   -webkit-backface-visibility: hidden;
 }
@@ -488,9 +495,12 @@ body, html{
   animation:eyebrow-anim-right 0.7s 2.2s 1 ease, eyebrow-raise 2s 6.6s infinite alternate ease-in-out;
   animation-fill-mode: forwards;
   -webkit-animation:eyebrow-anim-right 0.7s 2.2s 1 ease, eyebrow-raise 2s 6.6s infinite alternate ease-in-out;
-  /* -webkit-animation-fill-mode: forwards; */
-  top: 86px;
-  margin-left: -20px;
+  -webkit-animation-fill-mode: forwards;
+  top: 21px;
+  left: 2px;
+  /* margin-left: 14px; */
+  z-index: 2;
+  position: relative;
 }
 .eye{
   width: 6px;
@@ -498,8 +508,8 @@ body, html{
   border-radius: 10px;
   background: #334C68;
   position: absolute;
-  top: -24px;
-  left: 50%;
+  top: -8px;
+  left: 15px;
   margin-left: -10px;
   animation:grow 0.7s 2.2s 1 ease, eye-blink 4s 4.4s infinite linear;
   animation-fill-mode: forwards;
@@ -1020,14 +1030,13 @@ body, html{
 @keyframes eyebrow-raise
 {
 0% {
-  top:-35px;
+  top: -17px;
 }
 80% {
-  top:-35px;
-
+  top: -17px;
 }
 100% {
-  top:-45px;
+  top: -24px;
 }
 }
 
