@@ -10,7 +10,7 @@ body, html{
   height: 397px;
   width: 164px;
   /* display: flex; */
-  top: 20px;
+  top: 100px;
   /* vertical-align: middle; */
   position: relative;
   -webkit-animation: wraper-move 0.5s infinite;
@@ -352,27 +352,27 @@ body, html{
   right: 12px;
 }
 .topper {
-    display: none;
-    width: 180px;
-    height: 152px;
-    border-radius: 48px 48px 0 0;
+    /* display: none; */
+    width: 58px;
+    height: 38px;
+    border-radius: 19px 19px 0 0;
     background: #000;
     position: absolute;
-    top: -110px;
-    left: 8px;
+    top: -49px;
+    left: 2px;
     /* animation: hair-anim 0.1s 0.8s 1 linear; */
     /* animation-fill-mode: forwards; */
     /* -webkit-animation-fill-mode: forwards; */
     z-index: 3;
 }
 .topper_bottom {
-    width: 253px;
-    height: 56px;
+    width: 82px;
+    height: 19px;
     border-radius: 48px 48px 48px 48px;
     background: #000;
     position: absolute;
-    top: 96px;
-    left: -38px;
+    top: 31px;
+    left: -12px;
     animation-fill-mode: forwards;
     /* -webkit-animation: hair-anim 0.1s 0.8s 1 linear; */
     -webkit-animation-fill-mode: forwards;
